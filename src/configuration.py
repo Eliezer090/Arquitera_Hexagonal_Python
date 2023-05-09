@@ -12,10 +12,10 @@ def configure_inject(app: Flask) -> None:
 
     def config(binder: inject.Binder) -> None:
         # Environment variables RABBIT
-        rabbit_host = os.environ.get('RABBIT_HOST', '35.199.83.165')
-        rabbit_port = os.environ.get('RABBIT_PORT', 5672)
-        rabbit_user = os.environ.get('RABBIT_USER', 'guest')
-        rabbit_password = os.environ.get('RABBIT_PASSWORD', 'guest')
+        rabbit_host = os.environ.get('RABBIT_HOST', '')
+        rabbit_port = os.environ.get('RABBIT_PORT', 999)
+        rabbit_user = os.environ.get('RABBIT_USER', '')
+        rabbit_password = os.environ.get('RABBIT_PASSWORD', '')
 
         # Environment variables SQLITE
         BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -23,8 +23,8 @@ def configure_inject(app: Flask) -> None:
         SQLite_host = os.environ.get('SQLITE_HOST', f'sqlite:///{db_path}')
 
         # Environment variables REDIS
-        redis_host = os.environ.get('REDIS_HOST', '35.247.234.253')
-        redis_port = os.environ.get('REDIS_PORT', 6379)
+        redis_host = os.environ.get('REDIS_HOST', '')
+        redis_port = os.environ.get('REDIS_PORT', 999)
 
         # Environment Level de Log
         level_log = os.environ.get('LEVEL_LOG', 'ERROR')
