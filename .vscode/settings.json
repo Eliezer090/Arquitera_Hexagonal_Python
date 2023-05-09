@@ -1,0 +1,8 @@
+{
+    "python.poetryPath": "C:/Users/es19237/AppData/Roaming/Python/Scripts/poetry.exe",
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
