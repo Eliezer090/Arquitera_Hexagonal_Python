@@ -87,8 +87,8 @@ ou
     docker run -e YOUR_ENV=dev -p 8080:8080 poetry:v2
 ## Renomear e subir imagem:
 ### Renomear a imagem:
-    docker tag poetry:v2 gcr.io/invoicy-ped/example:v1
+    docker tag poetry:v2 gcr.io/ped/example:v1
 ### Subir a imagem:
-    docker push gcr.io/invoicy-ped/example:v1
+    docker push gcr.io/ped/example:v1
 
 
